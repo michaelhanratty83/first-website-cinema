@@ -1,0 +1,323 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Styles for the heading */
+h1{
+  font-size: 70px;
+  margin-top: 80px;
+  color: white; 
+  text-shadow: -1px -1px 10px #A020F0,  
+                1px -1px 10px #A020F0,
+                -1px 1px 10px #A020F0,
+                1px 1px 10px #A020F0;
+  transition: transform 0.3s;             
+}
+              
+h1:hover{
+  transform: scale(1.1);
+}
+
+/* Logo styles */
+.logo {
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+.logo img {
+  width: 100px; 
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px; 
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px; 
+}
+
+.nav-links li:last-child {
+  margin-right: 0; 
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul li::after{
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #A020F0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+
+/* Container for cinema info */
+.cinema-info {
+  max-width: 960px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+/* Social links styles */
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* Cinema details styles */
+.cinema-details {
+  font-size: 0.9rem;
+}
+
+.narrow-image {
+  max-width: 900px;
+  width: 100%; 
+}
+
+.social-links a img {
+  width: 30px; 
+  height: auto; 
+  margin: 0 10px; 
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.social-links p {
+  margin: 0;
+  font-size: 0.8em; 
+}
+
+/* Style for main booking page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  text-align: center;
+}
+
+#movieSelection,
+#timeSelection,
+#bookingForm,
+#basket {
+  display: inline-block; 
+  text-align: left; 
+  width: 60%; 
+  margin: 0 auto; 
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for buttons */
+button {
+  width: auto; 
+  max-width: 200px; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+h1,
+h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center; 
+}
+
+/* Style for shopping basket */
+#basket {
+  margin-top: 20px;
+}
+
+#basketList {
+  padding: 0;
+}
+
+#basketList li {
+  margin-bottom: 5px;
+}
+
+/* Style for total */
+#total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ui-datepicker {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+/* Style for button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  display: inline-block;
+  margin: 10px auto;
+}
+
+#chooseSeatsBtn,
+#chooseTimeBtn,
+#confirmBookingBtn {
+  width: auto;
+  max-width: 200px;
+}
+
+/* Center buttons horizontally */
+#movieSelection,
+#timeSelection,
+#bookingForm,
+#basket,
+body { 
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#chooseSeatsBtn,
+#chooseTimeBtn,
+#confirmBookingBtn {
+  width: auto;
+  max-width: 200px;
+}
+
+.total-item {
+  list-style-type: none; 
+}
+
+/* Styles for sub headings */
+h2 {
+  font-size: 24px; 
+  color: #A020F0; 
+  text-transform: uppercase; 
+  margin-bottom: 20px; 
+  font-weight: bold; 
+  text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head section with title of webpage, link to contact java script and custom css -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation bar with logo and navigation links to other pages -->
+      <nav>
+        <div class="logo">
+          <img src="cc logo.png" alt="CC logo in black and white" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="showingnow.html">Showing Now</a></li>
+          <li><a href="comingsoon.html">Coming Soon</a></li>
+          <li><a href="booking.html">Prices</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <!-- Main heading, followed by Google Maps embed, directions to cinema, contact form and submit button -->
+    <div class="where-we-are">
+      <h1>WHERE WE ARE</h1>
+    </div>
+    <div class="container">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.893853946596!2d-5.891390183989689!3d54.579516267898946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48610771e9c6d679%3A0xb65ba4a71c2c73a5!2s22%20Ardpatrick%20Gardens%2C%20Belfast%20BT6%209GF%2C%20UK!5e0!3m2!1sen!2sus!4v1649778918780!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="business-details">
+        <h2>OUR BUSINESS</h2>
+        <p>
+          We are a small independent cinema situated in the heart of the
+          Castlereagh area. If coming from Belfast city centre, head in the East
+          Belfast direction. Pass the bottom of the Cregagh Road take the next
+          right onto the Castlereagh road. About one mile up the Castlereagh
+          Road we are on the right hand side in a street called Ardpatrick
+          Gardens. There is plenty of on street parking available.
+        </p>
+      </div>
+      <div class="contact-form">
+        <h2>CONTACT US</h2>
+        <form action="#" method="post">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            autocomplete="name"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            autocomplete="email"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your Phone"
+            required
+            autocomplete="tel"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required="required"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <hr />
+    <footer>
+      <!-- Footer section with social media images to left and business details to the right  -->
+      <div class="footer-left">
+        <div class="social-links">
+          <a href="https://www.facebook.com"
+            ><img src="facebook.png" alt="Facebook logo" />
+            <p>Facebook</p></a
+          >
+          <a href="https://www.instagram.com"
+            ><img src="instagram.png" alt="Instagram logo" />
+            <p>Instagram</p></a
+          >
+          <a href="https://twitter.com"
+            ><img src="twitter.png" alt="Twitter logo" />
+            <p>Twitter</p></a
+          >
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="cinema-details">
+          <p>22 Ardpatrick Gardens, Belfast, BT6 3FG</p>
+          <p>Phone: 02890208348</p>
+          <p>Email: classiccinema@hotmail.co.uk</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

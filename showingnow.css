@@ -1,0 +1,243 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Styles for the heading */
+h1{
+  font-size: 70px;
+  margin-top: 80px;
+  color: white; 
+  text-shadow: -1px -1px 0 #ff0000,  
+               1px -1px 0 #ff0000,
+               -1px 1px 0 #ff0000,
+               1px 1px 0 #ff0000; 
+  transition: transform 0.3s;             
+}
+              
+  h1:hover{
+  transform: scale(1.1);
+}
+
+/* Logo styles */
+.logo {
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+.logo img {
+  width: 100px; 
+}
+
+/* Header styles */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.logo {
+  margin-left: 20px; 
+} 
+
+/* Navigation links styles */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px; 
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+} 
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;  /* Remove bullet points */
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Styling for navigation link hover effect */
+nav ul li::after{
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #A020F0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+
+.cinema-info {
+  max-width: 960px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+.cinema-details {
+  font-size: 0.9rem;
+}
+
+
+.narrow-image {
+  max-width: 900px; 
+  width: 100%; 
+}
+
+/* Social links styles */
+.social-links a img {
+  width: 30px; 
+  height: auto;
+  margin: 0 10px; 
+}
+
+/* Social links anchor styles */
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.social-links p {
+  margin: 0;
+  font-size: 0.8em; 
+}
+
+/* Carousel item image styles */
+.carousel-item img {
+    height: auto; 
+    max-height: 350px; 
+    width: 100%; 
+    object-fit: contain; 
+}
+
+/* Trailer styles */
+.trailer iframe {
+    width: 100%;
+}
+
+.details, .trailer {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.trailer h4 {
+    margin-bottom: 20px; 
+}
+
+.trailer iframe {
+    width: 80%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.trailer {
+  margin-bottom: 50px;
+}
+
+/* Certificate styles */
+.certificate {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Adjusted whats on styles for people with colour blindness */
+.whats-on-heading {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 80px;
+  color: white;
+  text-shadow: -1px -1px 10px #A020F0,  
+                1px -1px 10px #A020F0,
+                -1px 1px 10px #A020F0,
+                1px 1px 10px #A020F0;
+}
+
+.film-details {
+  text-align: center;
+}
+
+.film-details h3 {
+  font-size: 24px; 
+  color: #A020F0; 
+  text-transform: uppercase; 
+  margin-bottom: 20px; 
+  font-weight: bold; 
+  text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white;
+}
+
+
+  

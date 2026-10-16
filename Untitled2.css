@@ -1,0 +1,324 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cookies {
+    padding: 10px 0;
+  }
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Styles for the heading */
+h1 {
+  font-size: 70px;
+  margin-top: 80px;
+  color: white;
+  text-shadow: -1px -1px 10px #A020F0,
+               1px -1px 10px #A020F0,
+               -1px 1px 10px #A020F0,
+               1px 1px 10px #A020F0;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+/* Logo styles */
+.logo {
+  font-size: 1.5rem;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #A020F0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+/* Container for cinema info */
+.cinema-info {
+  max-width: 960px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+/* Social links styles */
+.social-links {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* Cinema details styles */
+.cinema-details {
+  font-size: 0.9rem;
+}
+
+/* Narrow image styles */
+.narrow-image {
+  max-width: 900px;
+  width: 100%;
+}
+
+.social-links a img {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.social-links p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+/* Button styles */
+.show-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.show-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hidden content styles */
+.hidden-content {
+  display: none;
+}
+
+/* Content section styles */
+.content {
+  text-align: center;
+}
+
+/* Description styles */
+.description {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Main image styles */
+#mainImage {
+  max-width: 40%;
+  height: auto;
+}
+
+/* Newsletter section styles */
+.newsletter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.newsletter .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.newsletter label {
+  font-weight: bold;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"],
+.newsletter button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.newsletter button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+/* Cookie notice styles */
+#cookies {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.cookies {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cookies a {
+  color: yellow;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#cookies-btn {
+  border-radius: 5px;
+  padding: 8px 12px 8px 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+}
+
+/* Additional heading styles */
+h2 {
+  font-size: 24px;
+  color: #A020F0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white, 0.5px 0.5px 0 white;
+}

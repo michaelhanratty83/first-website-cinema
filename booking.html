@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head section with title of webpage, link to jquery UI css and custom css -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation bar with logo and navigation links to other pages -->
+      <nav>
+        <div class="logo">
+          <img src="cc logo.png" alt="Cinema Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="showingnow.html">Showing Now</a></li>
+          <li><a href="comingsoon.html">Coming Soon</a></li>
+          <li><a href="booking.html">Prices</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <!-- Main heading with movie selection section and dropdown for selecting movie -->
+      <h1>BOOKING PAGE</h1>
+      <div id="movieSelection">
+        <h2>Choose Movie</h2>
+        <select id="movieSelect">
+          <option value="Scarface">Scarface</option>
+          <option value="Jaws">Jaws</option>
+          <option value="Forrest Gump">Forrest Gump</option>
+        </select>
+        <br />
+        <!-- Datepicker for selecting date  and time selection initially hidden and button to confirm time-->
+        <h2>Choose Date</h2>
+        <input type="text" id="datepicker" placeholder="Select Date" />
+      </div>
+
+      <div id="timeSelection" style="display: none">
+        <h2>Choose Time</h2>
+        <select id="timeSelect">
+          <option value="4pm">4:00 PM</option>
+          <option value="8pm">8:00 PM</option>
+        </select>
+        <br />
+        <button id="chooseTimeBtn">Choose Time</button>
+      </div>
+      <!-- Booking form section (initially hidden) with button to choose the seats -->
+      <div id="bookingForm" style="display: none">
+        <label for="adults">Adults:</label>
+        <input type="number" id="adults" min="0" value="0" />
+        <br />
+        <label for="children">Children:</label>
+        <input type="number" id="children" min="0" value="0" />
+        <br />
+        <label for="oaps">OAPs:</label>
+        <input type="number" id="oaps" min="0" value="0" />
+        <br />
+        <label for="students">Students:</label>
+        <input type="number" id="students" min="0" value="0" />
+        <br />
+        <label for="familyPass">Family Pass (2 adults, 3 children):</label>
+        <input type="number" id="familyPass" min="0" value="0" />
+        <br />
+        <button id="chooseSeatsBtn">Choose Seats</button>
+      </div>
+      <!-- Shopping basket section with the total and confirm booking button-->
+      <div id="basket">
+        <h2>Shopping Basket</h2>
+        <ul id="basketList"></ul>
+        <div id="total"></div>
+        <button id="confirmBookingBtn">Confirm Booking</button>
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <!-- Footer section with social media images to left and business details to the right  -->
+      <div class="footer-left">
+        <div class="social-links">
+          <a href="https://www.facebook.com">
+            <img src="facebook.png" alt="Facebook" />
+            <p>Facebook</p>
+          </a>
+          <a href="https://www.instagram.com">
+            <img src="instagram.png" alt="Instagram" />
+            <p>Instagram</p>
+          </a>
+          <a href="https://twitter.com">
+            <img src="twitter.png" alt="Twitter" />
+            <p>Twitter</p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="cinema-details">
+          <p>22 Ardpatrick Gardens, Belfast, BT6 3FG</p>
+          <p>Phone: 02890208348</p>
+          <p>Email: classiccinema@hotmail.co.uk</p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript libraries from jquery and custom javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="booking.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Homepage</title>
+    <link rel="stylesheet" href="Untitled2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Untitled-2.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="cc logo.png" alt="Cinema Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="showingnow.html">Showing Now</a></li>
+          <li><a href="comingsoon.html">Coming Soon</a></li>
+          <li><a href="booking.html">Prices</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <section class="content">
+      <h1>CLASSIC CINEMA</h1>
+      <div class="description">
+        <p>
+          Classic Cinema, nestled in the heart of Belfast, stands as an intimate
+          haven for cinephiles seeking a nostalgic escape into the golden era of
+          filmmaking. Embracing its quaint charm, this boutique cinema offers a
+          unique experience, curating a selection of three timeless classics
+          daily, each showcased on one of its three state-of-the-art IMAX
+          screens.
+        </p>
+
+        <div class="hidden-content">
+          <p>
+            With meticulous attention to detail, Classic Cinema transports
+            patrons back in time, not only through its meticulously chosen
+            repertoire but also through its meticulously designed interiors.
+            Vintage aesthetics blend seamlessly with modern comforts, creating
+            an ambiance that exudes warmth and allure. From the moment patrons
+            step through its doors, they are enveloped in an atmosphere that
+            celebrates the magic of cinema. The scent of freshly popped popcorn
+            wafts through the air as moviegoers eagerly anticipate the start of
+            their chosen classic masterpiece. As the lights dim and the curtains
+            draw back, the audience is transported on a journey through
+            cinematic history, with each frame unfolding in breathtaking clarity
+            on the expansive IMAX screens. From timeless tales of romance to
+            thrilling adventures and captivating dramas, Classic Cinema offers a
+            diverse selection that caters to every cinematic palate. In a world
+            where trends come and go, Classic Cinema remains steadfast in its
+            commitment to preserving the artistry and legacy of classic cinema,
+            making it a cherished gem in Belfast's cultural landscape.
+          </p>
+        </div>
+        <button class="show-more-btn" onclick="toggleContent()">
+          Show More
+        </button>
+      </div>
+      <div id="cookies">
+        <div class="container">
+          <div class="subcontainer">
+            <div class="cookies">
+              <p>
+                This website uses cookies to help give you the best experience
+                on our website.
+              </p>
+              <button id="cookies-btn">OK!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        id="mainImage"
+        src="cinema.jpg"
+        alt="Main Image"
+        class="cinema-image"
+      />
+
+      <button id="changeButton" class="show-more-btn blue-button">
+        Change Image
+      </button>
+    </section>
+
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form id="newsletterForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <div class="social-links">
+          <a href="https://www.facebook.com"
+            ><img src="facebook.png" alt="Facebook" />
+            <p>Facebook</p></a
+          >
+          <a href="https://www.instagram.com"
+            ><img src="instagram.png" alt="Instagram" />
+            <p>Instagram</p></a
+          >
+          <a href="https://twitter.com"
+            ><img src="twitter.png" alt="Twitter" />
+            <p>Twitter</p></a
+          >
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="cinema-details">
+          <p>22 Ardpatrick Gardens, Belfast, BT6 3FG</p>
+          <p>Phone: 02890208348</p>
+          <p>Email: classiccinema@hotmail.co.uk</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

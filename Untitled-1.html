@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Viewer</title>
+    <style>
+      #image {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="showBtn">Show Image</button>
+    <button id="hideBtn">Hide Image</button>
+    <button id="toggleBtn">Toggle Image</button>
+    <button id="fadeInBtn">Fade In</button>
+    <button id="fadeOutBtn">Fade Out</button>
+
+    <img id="image" src="https://via.placeholder.com/300" alt="Image" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#showBtn").click(function () {
+          $("#image").show();
+        });
+
+        $("#hideBtn").click(function () {
+          $("#image").hide();
+        });
+
+        $("#toggleBtn").click(function () {
+          $("#image").toggle();
+        });
+
+        $("#fadeInBtn").click(function () {
+          $("#image").fadeIn();
+        });
+
+        $("#fadeOutBtn").click(function () {
+          $("#image").fadeOut();
+        });
+
+        $("#image").click(function () {
+          $(this).fadeTo("slow", 0.33);
+        });
+      });
+    </script>
+  </body>
+</html>
